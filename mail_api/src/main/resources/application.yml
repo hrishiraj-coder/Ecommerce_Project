@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: MailApi
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gadhehrishikesh@gmail.com
+    password: hthv hbto rljz brdf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

@@ -1,0 +1,24 @@
+server:
+  port: 8081
+spring:
+  main:
+    web-application-type: servlet
+  application:
+    name: user_management_service
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user_account_db
+    username: root
+    password: root
+  jpa:
+    showSql: true
+springdoc:
+  api-docs:
+    enabled: true
+    path: /apidoc
+  swagger-ui:
+    path: /swaggerui.html
+    enabled: true
+
+mail-api:
+  url: localhost:8083
